@@ -1,0 +1,17 @@
+V3-website_category_scrap
+This script generates the website category framework (Stages 1 & 2), which is essential for structuring our content analysis. To analyze a single company or URL, simply run the third code block. The first block is for extracting a company's sitemap, and the second is for generating the general framework. Warning: These blocks have been manually fine-tuned and should not be run casually, as doing so may overwrite the source files.
+
+V1_S3_1_website_category_scrap
+Similar to the V3-website_category_scrap script, this version is designed for batch processing a large number of websites. To run a batch, simply replace the imported CSV file in the relevant block. To use this file for a single URL or company, change the code BATCH_TEST = True to BATCH_TEST = False. The last block can be slightly modified to merge the files 'visitor attributes.csv' and 'institutionID attributes.csv' with the original data.
+
+report_generator
+This script produces comprehensive PDF reports that summarize key data insights. To update the click data used in the reports, please update the all_traffic_data_merged.csv file.
+
+dashboard_app
+This is the main application that hosts four interactive dashboards for dynamic exploration of investor behavior. Simply run this file directly. To update the underlying data, please update the all_traffic_data_merged.csv file for click data, and both combined_company_events.csv and vodafone_event_impact_summary.csv for the Event Impact Analysis dashboard.
+
+universal_website_category_framework
+This file contains the current general sitemap framework. If you need to update its structure, please make your modifications directly here, ensuring the format is consistent.
+
+all_traffic_data_merged
+This CSV file contains all of our click data, with each row categorized by its corresponding website section and subsection.
